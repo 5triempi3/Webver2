@@ -1,0 +1,172 @@
+<DOCTYPE html>
+<html>
+<head>
+<title>Adoption Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+form {
+font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  }
+  form{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+ body{
+  background-color: #cdc9c3;
+}
+  
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+  <div class="inner">
+    <div class="wrapper contain separator-decorative separator-decorative-full">
+      <a href="../index.html">
+        <img src = "../img/logo.png" alt = "website logo" align = "center" width = "100" height = "100">
+      </a>
+         <h1 align="center"class="heading h1 teal">perfectpet.</h1>
+            <h4 align="center"class="heading h1 teal">The perfect partner is waiting for you</h4>
+        
+              <div class="text extra-classy">
+                  <h6><p></p></h6>
+          
+              <img src ="../img/donations.jpg" alt="A Pets Life" align = "left" width="300"
+                height="150">
+              <img src = "../img/petwithbox.jpg" alt = "pet with a donation box" align = "right" width="300" height = "150">
+                <h2 align="center">Donate Now!</h2><br><br>
+                  <p align="center">Animals enrich our lives in so many ways.
+                      They give us joy, protection, companionship, and unconditional love.
+                      Our tough economic 
+                      times mean less money but more animals are in need of help.<br>
+  
+              <p align="center">
+                Your wonderful support will ensure the ongoing 
+                care of the animals at perfectpet.
+                It also help us to provide basic education, 
+                treatment, rescue and sterilisation work undertaken by us on a daily basis.
+              </p>
+                  <p align="center"><strong>
+                    Without donations from the public, 
+                    perfectpet. is not able to sustain its activities.
+                    No donation should be regarded as too big or too small.</strong></p>
+              <p align = "center"> <strong> 
+                We would like you to know </strong> 
+                that not only will your donation directly benefit the animals in our area but - <br>
+                through a sharing agreement between all perfectpet. nationwide – <br> 
+                a portion will be used in other, less fortunate areas to benefit animals over a wider area. </p><br><br>
+              <img src ="../img/dogwithmoney.jpg" alt="Dog with money" width="250"
+                height="200" align = "center">
+              
+              <p><strong> There are a number of different ways you can donate to perfectpet.: </p></strong>
+  
+            </div>
+          <left>
+
+ <form id ="myform" class="form" action="" method="POST">
+            <div name="select">
+                Product:
+                <select name="product">
+<option value="UnopenedId">Unopened Foods</option>
+<option value="TreatsId">Animal treats</option>
+<option value="LeashesId">Leashes</option>
+<option value="CollarsId">Collars</option>
+<option value="HarnessId">Harnesses</option>
+<option value="BlanketsId">Blankets</option>
+<option value="SheetsId">Sheets</option>
+<option value="TowelsId">Towels</option>
+<option value="SturdyId">Sturdy Toys</option>  
+<option value="CarrierId">Carriers</option>
+<option value="CratesId">Metal Crates</option>
+<option value="FoodsId">Animal Foods</option>
+<option value="CleaningId">Cleaning supplies</option>
+<option value="DonationId">Any other donation</option>
+ </select>
+            </div>
+            <div name="name">
+                Name:
+                <input type="text" maxlength="12" name="name" value="Enter Name" onblur="if(this.value=='') this.value='Name';" onfocus="if(this.value=='Enter Name') this.value='';"/>
+            </div>
+			 <div surname="surname">
+                Surname:
+                <input type="text" maxlength="12" surname="surname" value="Enter Surname" onblur="if(this.value=='') this.value='Surname';" onfocus="if(this.value=='Enter Surname') this.value='';"/>
+            </div>
+			 <div email="email">
+                Email:
+                <input type="text" maxlength="12" Email="email" value="Enter Email" onblur="if(this.value=='') this.value='Email';" onfocus="if(this.value=='Enter Email') this.value='';"/>
+            </div>
+			<div cell="cell">
+                Cell:
+                <input type="text" maxlength="12" cell="cell" value="Enter Cell" onblur="if(this.value=='') this.value='Cell';" onfocus="if(this.value=='Enter Cell') this.value='';"/>
+            </div>
+                            <div name="button">
+                <button onclick = "myfunction()" type="submit" name="submit" value="Submit">Submit</button>
+            </div>
+        </form>
+
+        </left>
+        <br>
+		<p><strong> Other ways to contribute is via EFT : </p></strong>
+        <br>
+		
+		<table>
+		      <tr>
+              <td>Bank Name</td>
+		      <td>First National Bank</td>
+           </tr>
+		   
+            <tr>
+               <td> Account Holder</td>
+			   <td>perfectpet.</td>
+            </tr>
+            
+			 <tr>
+              <td>Branch</td>
+			  <td>Kimberley North</td>
+             </tr>
+			 
+			 <tr>
+              <td>BranchCode</td>
+			  <td>251255</td>
+             </tr>
+			 
+           <tr>
+              <td>AccountNumber</td>
+			  <td>62021109972</td>
+            </tr>    
+         </table>  
+		<br>
+        <br>
+<center>
+<p><strong> <a href="./donatepp.php">Click here to Donate using PayPal</a> </strong></p>
+
+<p>By Donating you agree to our <a href="./policy.php">Refund Policy</a>. If you disagree to our Refund Policy please leave this page.</p>
+
+  </div> </div> </div></div>
+  <script>
+    function myfunction(){
+      alert("Your donation has been processed. Thank you very much");
+    }
+
+  </script>
+  </body>
+  </html>
